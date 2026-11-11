@@ -1,5 +1,5 @@
-import CartClient from "@/components/cart/CartClient";
+import AuthForm from "@/components/auth/AuthForm";
 
-export default function CartPage() {
-  return <CartClient />;
+export default function LoginPage() {
+  return <AuthForm />;
 }
