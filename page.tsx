@@ -1,5 +1,5 @@
-import AccountClient from "@/components/auth/AccountClient";
+import CartClient from "@/components/cart/CartClient";
 
-export default function AccountPage() {
-  return <AccountClient />;
+export default function CartPage() {
+  return <CartClient />;
 }
