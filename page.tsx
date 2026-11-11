@@ -1,9 +1,5 @@
-import { getProducts } from "@/lib/data";
-import ProductsClient from "@/components/product/ProductsClient";
+import WishlistClient from "@/components/cart/WishlistClient";
 
-export const revalidate = 60;
-
-export default async function ProductsPage({ searchParams }: { searchParams: { category?: string } }) {
-  const products = await getProducts();
-  return <ProductsClient products={products} initialCategory={searchParams.category ?? ""} />;
+export default function WishlistPage() {
+  return <WishlistClient />;
 }
